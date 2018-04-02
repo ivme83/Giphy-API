@@ -3,13 +3,10 @@ var page = {
     createBtnRow: function(arr) {
         $("#btn-col").empty();
 
-        //var newRow = $("<div>");
-        //newRow.addClass("row");
-
         // Working here
         for (var i = 0; i < arr.length; i++) {
             var newCol = $("<div>");
-            newCol.addClass("col-sm-6");
+            newCol.addClass("col-lg-6");
             var btn = $("<button>");
             btn.attr("type", "button");
             btn.addClass("btn btn-primary btn-lg gif-btn");
@@ -17,10 +14,9 @@ var page = {
             btn.text(arr[i]);
 
             newCol.append(btn);
+
+            $("#btn-col").append(newCol);
         }
-        newRow.append(newCol);
-        
-        $("#btn-col").append(newRow);
     }
 }
 
