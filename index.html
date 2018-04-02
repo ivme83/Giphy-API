@@ -10,30 +10,33 @@
 
     <body>
         <div class="jumbotron">
-            <h1>Giphy!</h1>
+            <div class="container">
+                <h1>Giphy!</h1>
+                <p>Click the topic button for some amazing gifs!<br>Try adding your own!</p>
+            </div>
         </div>
 
-        <div class="container">
+        <div class="container" id="main-content">
             <div class="row">
                 <div class="col-lg-12">
                     <form>
                         <div class="form-group">
-                            <label for="add-item">Add to the fun!</label>
+                            <label for="add-item"><h3>Add to the fun!</h3></label>
                             <input type="text" class="form-control" id="add-item">
                         </div>
 
-                        <button type="submit" class="btn btn-default" id="run-add">Add</button>
-                        <button type="button" class="btn btn-default" id="clear-all">Clear</button>
+                        <button type="submit" class="btn btn-default btn-lg" id="run-add">Add</button>
+                        <button type="button" class="btn btn-default btn-lg" id="clear-all">Clear</button>
                     </form>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-xs-12 col-s-12 col-lg-4">
-                    <div class="panel panel-default ">
+                    <div class="panel panel-default">
                         <div class="panel-heading"><h2>Buttons!</h2></div>
-                        <div class="panel-body">
-                            <div id="btn-col">
+                        <div class="panel-body text-center">
+                            <div class="row" id="btn-col">
 
                             </div>
                         </div>

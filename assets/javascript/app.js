@@ -3,12 +3,13 @@ var page = {
     createBtnRow: function(arr) {
         $("#btn-col").empty();
 
-        var newRow = $("<div>");
-        newRow.addClass("row");
-        var newCol = $("<div>");
-        newCol.addClass("col-12");
+        //var newRow = $("<div>");
+        //newRow.addClass("row");
 
+        // Working here
         for (var i = 0; i < arr.length; i++) {
+            var newCol = $("<div>");
+            newCol.addClass("col-sm-6");
             var btn = $("<button>");
             btn.attr("type", "button");
             btn.addClass("btn btn-primary btn-lg gif-btn");
@@ -75,7 +76,6 @@ var searchAPI = {
 
             resultsDiv.append(panelDiv);
 
-            //resultsDiv.append(imgDiv);
         }
 
         $("#gif-col").append(resultsDiv);
